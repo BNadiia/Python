@@ -4,6 +4,7 @@ import math
 
 
 def ui_input():
+    """This function make input for 3 sides of triangle."""
     return float(input("Enter a:")), float(input("Enter b:")), float(input("Enter c:"))
 
 
@@ -15,6 +16,7 @@ def calculate_area(a: float, b: float, c: float):
 
 
 def ui_output(area: float):
+    """This function print area of triangle."""
     print("The area of triangle: " + str(area))
 
 
