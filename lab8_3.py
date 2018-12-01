@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 arr = [int(x) for x in input("Enter list of number: " ).split()] 
 
 arr.sort()
