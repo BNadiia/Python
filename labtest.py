@@ -11,15 +11,20 @@ def calculate_area(a: float, b: float, c: float):
 
 class Qwerty(unittest.TestCase):
 
-    def test_qwerty(self):
+    def test_triangleE(self):
         self.assertEqual(calculate_area(3, 4, 5), 6)
 
-    def test_qwerty1(self):
+    def test_triangleNE(self):
         self.assertNotEquals(calculate_area(3, 4, 5), 10)
 
-    def test_qw(self):
+    def test_triangleAE(self):
          self.assertAlmostEquals(calculate_area(10, 7, 12), 34.98, 2)
 
+    def test_triangleT(self):
+        self.assertTrue(calculate_area(3, 4, 5) == 6)
+
+    def test_triangleF(self):
+        self.assertFalse(calculate_area(3, 4, 5) == 9)
 
 
 if __name__ == "__main__":
